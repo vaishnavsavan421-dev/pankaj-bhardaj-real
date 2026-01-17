@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pankaj Bhardwaj Official</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }body {
+  height: 100vh;
+  background: #0b0b0f;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Snowfall */
+.snow {
+  position: absolute;
+  top: -10px;
+  color: #fff;
+  user-select: none;
+  pointer-events: none;
+  animation: fall linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  to { transform: translateY(110vh); }
+}
+
+/* Main Box */
+.box {
+  position: relative;
+  z-index: 10;
+  width: 90%;
+  max-width: 420px;
+  background: rgba(15, 15, 25, 0.85);
+  border-radius: 18px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+  border: 2px solid rgba(255,255,255,0.08);
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #ffb703;
+  margin-bottom: 20px;
+}
+
+.features {
+  text-align: left;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.features span { display: block; }
+
+/* Animated Button */
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #ff0080, #00f2ff, #ff0080);
+  background-size: 600% 600%;
+  animation: glow 4s ease infinite;
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.6);
+}
+
+@keyframes glow {
+  0% { background-position: 0% 50%; box-shadow: 0 0 10px #ff0080; }
+  50% { background-position: 100% 50%; box-shadow: 0 0 20px #00f2ff; }
+  100% { background-position: 0% 50%; box-shadow: 0 0 10px #ff0080; }
+}
+
+.footer {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+  </style>
+</head>
