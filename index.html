@@ -43,6 +43,22 @@
   border: 2px solid rgba(255,255,255,0.08);
 }
 
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(0, 242, 255, 0.6);
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.7);
+  background: #000;
+}
+
 .title {
   font-size: 26px;
   font-weight: bold;
@@ -97,3 +113,34 @@
 
   </style>
 </head>
+<body>  <div class="box">
+    <div class="logo-wrap">
+      <img src="logo.png" alt="Pankaj Bhardwaj Logo" class="logo" />
+    </div>
+    <div class="title">Pankaj Bhardwaj Official</div>
+    <div class="subtitle">🔥 Daily Free Telegram Updates</div><div class="features">
+  <span>✔ Daily free tips</span>
+  <span>✔ Live updates</span>
+  <span>✔ Beginner friendly</span>
+  <span>✔ 100% free</span>
+</div>
+
+<a href="#" class="btn">Join Free Telegram</a>
+
+<div class="footer">No charges • No risk • Free access</div>
+
+  </div>  <script>
+    // Snowfall generator
+    const snowCount = 40;
+    for (let i = 0; i < snowCount; i++) {
+      const snow = document.createElement('div');
+      snow.className = 'snow';
+      snow.innerHTML = '❄';
+      snow.style.left = Math.random() * 100 + 'vw';
+      snow.style.animationDuration = (3 + Math.random() * 5) + 's';
+      snow.style.fontSize = (10 + Math.random() * 15) + 'px';
+      snow.style.opacity = Math.random();
+      document.body.appendChild(snow);
+    }
+  </script></body>
+</html>
